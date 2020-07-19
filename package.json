@@ -1,0 +1,26 @@
+{
+  "name": "200719-readme-generator",
+  "version": "1.0.0",
+  "description": "A program meant to generate a professional README with user input",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephptflanagan/200719-Readme-Generator.git"
+  },
+  "keywords": [
+    "Readme",
+    "Generator"
+  ],
+  "author": "josephptflanagan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephptflanagan/200719-Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/josephptflanagan/200719-Readme-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  }
+}
