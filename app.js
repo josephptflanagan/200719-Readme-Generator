@@ -1,7 +1,10 @@
-const { writeFile, copyFile } = require('./utils/generate-site.js');
+//allows for usage of the writeFile utility from fs with error handling
+const {writeFile} = require('./utils/generate-readme.js');
 
-const generatePage = require('./src/page-template.js');
+//generates the readme from a template
+const generateReadme = require('./src/readme-template.js');
 
+//allows for the use of the inquirer package
 const inquirer = require("inquirer");
 
 const promptUser = () => {
@@ -131,7 +134,7 @@ const promptProject = portfolioData => {
 promptUser()
   .then(promptProject)
   .then(portfolioData => {
-    return generatePage(portfolioData);
+    return generateReadme(portfolioData);
   })
   .then(pageHTML => {
     return writeFile(pageHTML);
