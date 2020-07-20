@@ -1,8 +1,8 @@
-# asd
+# README Generator
 
 ## Description
-asd
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Dynamically generate a professional README.
 
 ## Table of Contents
 * [Installation Instructions](#Installation-Instructions)
@@ -10,30 +10,29 @@ asd
 * [Contribution Guidelines](#Contribution-Guidelines)
 * [Test Instructions](#Test-Instructions)
 * [License](#License)
-* [GitHub Profile](#Questions)
-* [Email Contact](#Questions)
+* [GitHub Profile](#Questions?)
+* [Email Contact](#Questions?)
 
 ### Installation Instructions
-asd
+Download files to computer, run via node.js
 
 ### Usage Information
-asd
+Install, run with node.js, answer  all questions
 
 ### Contribution Guidelines
-asd
+Improve utility, all code must pass review
 
 ### Test Instructions
-asd
+Test all files across systems
 
 ### License
-This program is covered under the Apache license.
+This program is covered under the MIT license.
 
 ### Questions?
 
 #### GitHub Profile
-[link](https://github.com/asd)
+[link](https://github.com/josephptflanagan)
 
 #### Email
-asd
-
+josephptflanagan@gmail.com
     
