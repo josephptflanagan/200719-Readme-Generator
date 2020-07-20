@@ -9,8 +9,11 @@ const inquirer = require("inquirer");
 
 //Prompts User for the project title, description, installation instructions, usage information, contribution guidelines, test instructions, license, GitHub Username, email address
 const promptUser = () => {
-  return inquirer.prompt([
-      {
+  
+    readmeData = [];
+
+    return inquirer.prompt([
+      {  
         //PROJECT TITLE INPUT
         type: 'input',
         name: 'title',
@@ -99,7 +102,7 @@ const promptUser = () => {
         type: 'list',
         name: 'license',
         message: 'What license is this covered by? (Choose the one that applies)',
-        choices: ['Apache', 'BSD 3-Clause', 'BSD 2-Clause', 'GPL', 'LGPL', 'MIT', 'Mozilla', 'Common Development and Dirstribution', 'Eclipse']
+        choices: ['Apache', 'Boost', 'BSD 3-Clause', 'BSD 2-Clause', 'GPL', 'IBM', 'ISC', 'MIT', 'Mozilla', 'Eclipse']
       },
       {
         //GITHUB USERNAME INPUT
@@ -130,21 +133,19 @@ const promptUser = () => {
         }
       }
     ])
-    .then(projectData => {
-        readmeData.projects.push(projectData);
-    });
   };
 
 promptUser()
-  .then(readmeData => {
-    return generateReadme(readmeData);
-  })
-  .then(pageMD => {
-    return writeFile(pageMD);
-  })
-  .then(writeFileResponse => {
-    console.log(writeFileResponse);
-  })
-  .catch(err => {
-    console.log(err);
-  });
+    .then(readmeData => {
+        return generateReadme(readmeData);
+    })
+    .then(pageMD => {
+        //console.log(pageMD);
+        return writeFile(pageMD);
+    })
+    .then(writeFileResponse => {
+      console.log(writeFileResponse);
+    })
+    .catch(err => {
+      console.log(err);
+    });

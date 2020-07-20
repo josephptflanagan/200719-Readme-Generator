@@ -6,6 +6,6 @@ https://github.com/josephptflanagan/200719-Readme-Generator
 ## GitHub Pages
 Not applicable, this file must be downloaded to be executed
 
-## Screenshot
+## Video Walkthrough
 
 ### Description

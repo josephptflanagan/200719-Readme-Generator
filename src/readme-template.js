@@ -1,98 +1,95 @@
-// create the about section
-const generateAbout = aboutText => {
-    if (!aboutText) {
-      return '';
+// create the license badge
+const generateBadge = license => {
+    switch(license){
+
+    case "Apache":
+        return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+        break;
+
+    case "Boost":
+        return `[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`;
+        break;
+    
+    case "BSD 3-Clause":
+        return `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+        break;
+
+    case "BSD 2-Clause":
+        return `[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`;
+        break;
+
+    case "GPL":
+        return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+        break;
+
+    case "IBM":
+        return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`;
+        break;
+
+    case "ISC":
+        return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`;
+        break;
+
+    case "MIT":
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+        break;
+
+    case "Mozilla":
+        return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
+        break;
+
+    case "Eclipse":
+        return `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
+        break;
+
+    default:
+        return ``;
     }
-  
-    return `
-      <section class="my-3" id="about">
-        <h2 class="text-dark bg-primary p-2 display-inline-block">About Me</h2>
-        <p>${aboutText}</p>
-      </section>
-    `;
-  };
-  
-  const generateProjects = projectsArr => {
-    return `
-      <section class="my-3" id="portfolio">
-        <h2 class="text-dark bg-primary p-2 display-inline-block">Work</h2>
-        <div class="flex-row justify-space-between">
-        ${projectsArr
-          .filter(({ feature }) => feature)
-          .map(({ name, description, languages, link }) => {
-            return `
-            <div class="col-12 mb-2 bg-dark text-light p-3">
-              <h3 class="portfolio-item-title text-light">${name}</h3>
-              <h5 class="portfolio-languages">
-                Built With:
-                ${languages.join(', ')}
-              </h5>
-              <p>${description}</p>
-              <a href="${link}" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
-            </div>
-          `;
-          })
-          .join('')}
-  
-        ${projectsArr
-          .filter(({ feature }) => !feature)
-          .map(({ name, description, languages, link }) => {
-            return `
-            <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
-              <h3 class="portfolio-item-title text-light">${name}</h3>
-              <h5 class="portfolio-languages">
-                Built With:
-                ${languages.join(', ')}
-              </h5>
-              <p>${description}</p>
-              <a href="${link}" class="btn mt-auto"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
-            </div>
-          `;
-          })
-          .join('')}
-        </div>
-      </section>
-    `;
-  };
-  
-  module.exports = templateData => {
+}
+  module.exports = readmeData => {
+
+    //console.log(readmeData);
+
     // destructure page data by section
-    const { projects, about, ...header } = templateData;
+    const { title, description, install, usage, contribution, test, license, github, email} = readmeData;
   
-    return `
-    <!DOCTYPE html>
-    <html lang="en">
-  
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Portfolio Demo</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-    </head>
-  
-    <body>
-      <header>
-        <div class="container flex-row justify-space-between align-center py-3">
-          <h1 class="page-title text-secondary bg-dark py-2 px-3">${header.name}</h1>
-          <nav class="flex-row">
-            <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
-              header.github
-            }">GitHub</a>
-          </nav>
-        </div>
-      </header>
-      <main class="container my-5">
-        ${generateAbout(about)}
-        ${generateProjects(projects)}
-      </main>
-      <footer class="container text-center py-3">
-        <h3 class="text-dark">&copy; ${new Date().getFullYear()} by ${header.name}</h3>
-      </footer>
-    </body>
-    </html>
+    return`# ${title}
+
+## Description
+${generateBadge(license)}
+${description}
+
+## Table of Contents
+* [Installation Instructions](#Installation-Instructions)
+* [Usage Information](#Usage-Information)
+* [Contribution Guidelines](#Contribution-Guidelines)
+* [Test Instructions](#Test-Instructions)
+* [License](#License)
+* [GitHub Profile](#Questions)
+* [Email Contact](#Questions)
+
+### Installation Instructions
+${install}
+
+### Usage Information
+${usage}
+
+### Contribution Guidelines
+${contribution}
+
+### Test Instructions
+${test}
+
+### License
+This program is covered under the ${license} license.
+
+### Questions?
+
+#### GitHub Profile
+[link](https://github.com/${github})
+
+#### Email
+${email}
     `;
   };
   
