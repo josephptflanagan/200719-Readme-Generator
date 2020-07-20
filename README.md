@@ -10,8 +10,8 @@ asd
 * [Contribution Guidelines](#Contribution-Guidelines)
 * [Test Instructions](#Test-Instructions)
 * [License](#License)
-* [GitHub Profile](#Questions?)
-* [Email Contact](#Questions?)
+* [GitHub Profile](#Questions)
+* [Email Contact](#Questions)
 
 ### Installation Instructions
 asd
