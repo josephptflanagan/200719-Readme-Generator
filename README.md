@@ -1,8 +1,8 @@
-# README Generator
+# asdasd
 
 ## Description
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-Dynamically generate a professional README.
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+asdasfgga
 
 ## Table of Contents
 * [Installation Instructions](#Installation-Instructions)
@@ -14,19 +14,19 @@ Dynamically generate a professional README.
 * [Email Contact](#Questions?)
 
 ### Installation Instructions
-Download files to computer, run via node.js
+asdagads
 
 ### Usage Information
-Install, run with node.js, answer  all questions
+adsfgasdfas
 
 ### Contribution Guidelines
-Improve utility, all code must pass review
+asasfd
 
 ### Test Instructions
-Test all files across systems
+asfawd
 
 ### License
-This program is covered under the MIT license.
+This program is covered under the Mozilla license.
 
 ### Questions?
 
