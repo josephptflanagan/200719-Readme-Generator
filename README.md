@@ -4,28 +4,28 @@
 asd
 
 ## Table of Contents
-* [Installation Instructions]
-* [Usage Information]
-* [Contribution Guidelines]
-* [Test Instructions]
-* [GitHub Profile]
-* [Email Contact]
+* [Installation Instructions](#Installation-Instructions)
+* [Usage Information](#Usage-Information)
+* [Contribution Guidelines](#Contribution-Guidelines)
+* [Test Instructions](#Test-Instructions)
+* [GitHub Profile](#GitHub-Profile)
+* [Email Contact](#Email-Contact)
 
-### Installation Instructions (#Installation-Instructions)
+### Installation Instructions
 asd
 
-### Usage Information (#Usage-Information)
+### Usage Information
 asd
 
-### Contribution Guidelines (#Contribution-Guidelines)
+### Contribution Guidelines
 asd
 
-### Test Instructions (#Test-Instructions)
+### Test Instructions
 asd
 
-#### GitHub Profile (#GitHub-Profile)
+#### GitHub Profile
 [link](https://github.com/asd)
 
-#### Email (#Email-Contact)
+#### Email
 asd
     
