@@ -6,7 +6,7 @@ const writeFile = pageMD => {
     //console.log("pageMD: " + pageMD);
 
     return new Promise((resolve, reject) => {
-      fs.writeFile('./dist/README.md', pageMD, err => {
+      fs.writeFile('./dist/GeneratedREADME.md', pageMD, err => {
         // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
         if (err) {
           reject(err);

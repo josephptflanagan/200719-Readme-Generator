@@ -1,8 +1,8 @@
-# Readme Generator
+# Generated Readme Example
 
 ## Description
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-Dynamically generate readme files
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
+Generate an Example Readme
 
 ## Table of Contents
 * [Installation Instructions](#Installation-Instructions)
@@ -14,19 +14,19 @@ Dynamically generate readme files
 * [Email Contact](#Questions)
 
 ### Installation Instructions
-Download file to your machine
+Download and use Node.js.
 
 ### Usage Information
-Run with node.js
+Use Node.js and fill in requested data.
 
 ### Contribution Guidelines
-Improve Functionality, must pass code review
+Make it better, all additional code must pass review.
 
 ### Test Instructions
-All code must be tested
+All code must be tested.
 
 ### License
-This program is covered under the MIT license.
+This program is covered under the IBM license.
 
 ### Questions?
 
@@ -35,7 +35,4 @@ This program is covered under the MIT license.
 
 #### Email
 josephptflanagan@gmail.com
-
-#### Link to Video Walkthrough
-[link](https://drive.google.com/file/d/1qnqzjaeHQoYEt30Ospox-hd1hMK7-iVS/view)
     
